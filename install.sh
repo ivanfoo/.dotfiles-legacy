@@ -30,3 +30,9 @@ echo "Configuring tmux..."
 mv ~/.tmux.conf ~/.tmux.conf.old 2> /dev/null 
 ln -s ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
 echo "Done!"
+
+# xmodmap
+echo "Configuring xmodmap..."
+mv ~/.Xmodmap ~/.Xmodmap.old 2> /dev/null 
+ln -s ~/.dotfiles/xmodmap/.Xmodmap ~/.Xmodmap
+echo "Done!"
