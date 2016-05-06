@@ -1,12 +1,22 @@
 "Pathogen
 execute pathogen#infect()
 
-"Generic
-filetype plugin indent on
+"Filetype plugins
+filetype plugin on 
+filetype indent on
 syntax on
+
+"Show line numbers
 set nu
+
+"Ruler
 set colorcolumn=80
+
+"Ignore swp files
 set noswapfile
+
+"Refresh files
+set autoread
 
 "Go
 let g:go_highlight_functions = 1  
@@ -23,3 +33,5 @@ set term=screen-256color
 let base16colorspace=256
 set background=dark
 colorscheme molokai
+
+map ; :
