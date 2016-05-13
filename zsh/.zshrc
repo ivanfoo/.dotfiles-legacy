@@ -8,7 +8,7 @@ ZSH_THEME=ivanfoo
 ZSH_CUSTOM=$HOME/.dotfiles/zsh
 
 # Plugins to load
-plugins=(git docker vagrant systemd golang zsh-autosuggestions)
+plugins=(git docker vagrant systemd golang zsh-autosuggestions pip)
 
 # Path
 export GOPATH="$HOME/go"
@@ -41,6 +41,8 @@ fi
 
 # Private stuff
 if [ -d "$HOME/.private" ]; then
-	source $HOME/.private/*/*.sh
+	for f in $HOME/.private/*/*{rc,.sh}; do
+		source $f
+	done
 fi
 
