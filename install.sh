@@ -34,5 +34,5 @@ echo "Done!"
 # xmodmap
 echo "Configuring xmodmap..."
 mv ~/.Xmodmap ~/.Xmodmap.old 2> /dev/null 
-ln -s ~/.dotfiles/xmodmap/.Xmodmap ~/.Xmodmap
+ln -s ~/.dotfiles/xmodmap/.xmodmap ~/.xmodmap
 echo "Done!"
