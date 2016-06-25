@@ -11,8 +11,8 @@ echo "Installing pathogen..."
 curl -LSso ~/.dotfiles/vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 echo "Done!"
 
-# vim plugins
-echo "Installing plugins..."
+# depenencies
+echo "Installing zsh and vim plugins..."
 git submodule init
 git submodule update
 echo "Done!"
@@ -36,3 +36,5 @@ echo "Configuring xmodmap..."
 mv ~/.Xmodmap ~/.Xmodmap.old 2> /dev/null 
 ln -s ~/.dotfiles/xmodmap/.xmodmap ~/.xmodmap
 echo "Done!"
+
+
