@@ -13,3 +13,9 @@
 [submodule "vim/vim-puppet"]
 	path = vim/vim-puppet
 	url = https://github.com/rodjek/vim-puppet
+[submodule "vim/bundle/vim-terraform"]
+	path = vim/bundle/vim-terraform
+	url = git://github.com/markcornick/vim-terraform.git
+[submodule "vim/bundle/ansible-vim"]
+	path = vim/bundle/ansible-vim
+	url = https://github.com/pearofducks/ansible-vim
