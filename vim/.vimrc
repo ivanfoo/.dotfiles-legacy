@@ -28,6 +28,9 @@ let g:go_highlight_build_constraints = 1
 "Neocomplete
 let g:neocomplete#enable_at_startup = 1
 
+"Terraform
+let g:terraform_fmt_on_save = 0
+
 "Style
 set term=screen-256color
 let base16colorspace=256
