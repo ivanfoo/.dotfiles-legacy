@@ -12,7 +12,8 @@ plugins=(git docker vagrant systemd golang zsh-autosuggestions pip)
 
 # Path
 export GOPATH="$HOME/go"
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/ivanfoo/.local/bin:/home/ivanfoo/bin:$GOPATH/bin"
+export TFORM="/opt/terraform"
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/ivanfoo/.local/bin:/home/ivanfoo/bin:$GOPATH/bin:$TFORM"
 
 # Zsh magic
 source $ZSH/oh-my-zsh.sh
@@ -46,3 +47,5 @@ if [ -d "$HOME/.private" ]; then
 	done
 fi
 
+# added by travis gem
+[ -f /home/ivanfoo/.travis/travis.sh ] && source /home/ivanfoo/.travis/travis.sh
