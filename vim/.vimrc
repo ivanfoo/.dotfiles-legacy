@@ -1,3 +1,6 @@
+" Shell fix
+set shell=/bin/bash
+
 "Pathogen
 execute pathogen#infect()
 
