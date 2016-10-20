@@ -8,10 +8,11 @@ ZSH_THEME=ivanfoo
 ZSH_CUSTOM=$HOME/.dotfiles/zsh
 
 # Plugins to load
-plugins=(git docker vagrant systemd golang zsh-autosuggestions pip)
+plugins=(git docker systemd golang zsh-autosuggestions)
+#plugins=()
 
 # Path
-export GOPATH="$HOME/go"
+export GOPATH="$HOME/workspace/go"
 export TFORM="/opt/terraform"
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/ivanfoo/.local/bin:/home/ivanfoo/bin:$GOPATH/bin:$TFORM"
 
@@ -40,10 +41,10 @@ if [ -z $BASE16_SHELL ]; then
 	source $BASE16_SHELL
 fi
 
-# Private stuff
+ Private stuff
 if [ -d "$HOME/.private" ]; then
 	for f in $HOME/.private/*/*{rc,.sh}; do
-		source $f
+		source $f 2&1 > /dev/null
 	done
 fi
 

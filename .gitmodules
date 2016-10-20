@@ -19,3 +19,6 @@
 [submodule "vim/bundle/ansible-vim"]
 	path = vim/bundle/ansible-vim
 	url = https://github.com/pearofducks/ansible-vim
+[submodule "vim/puppet-syntax-vim"]
+	path = vim/puppet-syntax-vim
+	url = https://github.com/puppetlabs/puppet-syntax-vim
