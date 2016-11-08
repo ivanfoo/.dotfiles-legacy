@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/ivanfoo/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 ZSH_THEME=ivanfoo
@@ -14,7 +14,7 @@ plugins=(git docker systemd golang zsh-autosuggestions)
 # Path
 export GOPATH="$HOME/workspace/go"
 export TFORM="/opt/terraform"
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/ivanfoo/.local/bin:/home/ivanfoo/bin:$GOPATH/bin:$TFORM"
+export PATH=$PATH:$GOPATH/bin
 
 # Zsh magic
 source $ZSH/oh-my-zsh.sh
@@ -41,7 +41,7 @@ if [ -z $BASE16_SHELL ]; then
 	source $BASE16_SHELL
 fi
 
- Private stuff
+# Private stuff
 if [ -d "$HOME/.private" ]; then
 	for f in $HOME/.private/*/*{rc,.sh}; do
 		source $f 2&1 > /dev/null
