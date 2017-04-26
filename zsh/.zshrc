@@ -14,7 +14,7 @@ plugins=(git docker systemd golang zsh-autosuggestions)
 # Path
 export GOPATH="$HOME/workspace/go"
 export TFORM="/opt/terraform"
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin
 
 # Zsh magic
 source $ZSH/oh-my-zsh.sh
@@ -42,11 +42,12 @@ if [ -z $BASE16_SHELL ]; then
 fi
 
 # Private stuff
-if [ -d "$HOME/.private" ]; then
-	for f in $HOME/.private/*/*{rc,.sh}; do
-		source $f 2&1 > /dev/null
-	done
-fi
+#if [ -d "$HOME/.private" ]; then
+#	for f in $HOME/.private/*/*{rc,.sh}; do
+#		#source $f 2&1 > /dev/null
+#		source $f
+#	done
+#fi
 
 # added by travis gem
 [ -f /home/ivanfoo/.travis/travis.sh ] && source /home/ivanfoo/.travis/travis.sh
